@@ -1,0 +1,12 @@
+{
+	"watch": [
+		"server.js",
+		"app-locals.js",
+		"assets.js",
+		"config/default.js",
+		"config/env/*.js",
+		"lib",
+		"app/controllers/**/*.js",
+		"app/views/*.ejs"
+	]
+}

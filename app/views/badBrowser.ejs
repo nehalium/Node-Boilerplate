@@ -1,0 +1,65 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie"> <![endif]-->
+<!--[if gt IE 9]><!--> <html>  <!--<![endif]-->
+<head>
+	<title><%= title %></title>
+	<meta charset="utf-8">
+	<meta name="robots" content="NOINDEX, NOFOLLOW">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="cache-control" content="max-age=0">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta name="description" content="<%= title %>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<%-: cssTag('build') %>
+	<base href="/">
+
+	<!-- ICONS -->
+	<link rel="shortcut icon" type="image/x-icon" href="/v4/public/img/favicon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="/v4/public/img/apple-icon-57x57.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="/v4/public/img/apple-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="/v4/public/img/apple-icon-114x114.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="/v4/public/img/apple-icon-144x144.png"/>
+	<% include components/ga %>
+	<script>
+		ga('send', 'pageview', {'page': '/unsupported_browser'});
+		ga('send', 'event', 'unsupportedBrowser');
+	</script>
+</head>
+<body>
+	<div class="container unsupported">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<h1>Attention</h1>
+				<p>The application will not function with this web browser. In order to optimize your experience, please upgrade to a newer version of Internet Explorer, or try another browser such as Firefox, Safari, or Google Chrome.</p>
+				<ul class="list-unstyled clearfix">
+					<li>
+						<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" title="Download Internet Explorer 8, 9, 10 or 11">
+							<span class="sprites getInternetExplorer"></span><span class="text">Download Internet Explorer</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.mozilla.com/firefox/" title="Download Firefox" target="_blank">
+							<span class="sprites getFirefox"></span><span class="text">Download Firefox</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.apple.com/safari/" title="Download Safari" target="_blank">
+							<span class="sprites getSafari"></span><span class="text">Download Safari</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.google.com/chrome" title="Download Google Chrome" target="_blank">
+							<span class="sprites getChrome"></span><span class="text">Download Chrome</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
